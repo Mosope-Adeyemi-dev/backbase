@@ -1,0 +1,7 @@
+name: backbase-core
+runtime: nodejs
+description: Backbase Core
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: ""

@@ -1,0 +1,40 @@
+# sample project datastore schema
+project:
+  name: MyChatApp
+
+database: 
+  name: chat-app-db
+  collections:
+    - stores:
+        name:
+          type: String
+          required: true
+        owner:
+          type: String
+          required: true
+        date:
+          type: Date
+        address:
+          city: 
+            type: String
+          province:
+            type: String
+          country:
+            type: String
+    - products:
+        name:
+          type: String
+          minLength: 3
+          maxLength: 50
+          required: true
+        price:
+          type: Number
+          minimum: 0
+          required: true
+        description:
+          type: String
+          maxLength: 200
+        store:
+          type: String
+
+
